@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#00ff00">
+
+    <TextView
+        android:id="@+id/tes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="40dp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"/>
+    <EditText
+        android:id="@+id/editemail"
+        android:layout_below="@id/tes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FFEB3B"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:padding="8sp"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/editpass"
+        android:layout_below="@id/editemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FFEB3B"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:padding="8sp"
+        android:hint="Password" />
+<!--    <TextView-->
+<!--        android:id="@+id/textemail"-->
+<!--        android:paddingTop="30dp"-->
+<!--        android:paddingLeft="12dp"-->
+<!--        android:layout_below="@+id/tes"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Email       : "-->
+<!--        android:textColor="#fff"-->
+<!--        android:textSize="20sp"/>-->
+<!--    <EditText-->
+<!--        android:id="@+id/editemail"-->
+<!--        android:layout_below="@id/tes"-->
+<!--        android:layout_toRightOf="@id/textemail"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="username"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textpass"-->
+<!--        android:paddingTop="10dp"-->
+<!--        android:paddingLeft="12dp"-->
+<!--        android:layout_below="@+id/textemail"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Password: "-->
+<!--        android:textColor="#fff"-->
+<!--        android:textSize="20sp"/>-->
+<!--    <EditText-->
+<!--        android:id="@+id/editpass"-->
+<!--        android:layout_below="@id/textemail"-->
+<!--        android:layout_toRightOf="@id/textemail"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="password"/>-->
+    <Button
+        android:id="@+id/login"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/editpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Login"/>
+    <TextView
+        android:id="@+id/register"
+        android:layout_below="@id/login"
+        android:paddingLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Belum punya Akun? " />
+    <TextView
+        android:id="@+id/register1"
+        android:layout_below="@id/login"
+        android:layout_toRightOf="@id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#5700ff"
+        android:text="Daftar Sekarang"/>
+
+</RelativeLayout>
